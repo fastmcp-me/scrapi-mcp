@@ -1,7 +1,12 @@
+![ScrAPI logo](https://raw.githubusercontent.com/DevEnterpriseSoftware/scrapi-sdk-dotnet/master/icon_small.png)
 
 # ScrAPI MCP Server
 
-MCP server for using ScrAPI to scrape web pages.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![NPM Downloads](https://img.shields.io/npm/dm/@deventerprisesoftware/scrapi-mcp)](https://www.npmjs.com/package/@deventerprisesoftware/scrapi-mcp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/deventerprisesoftware/scrapi-mcp)](https://hub.docker.com/r/deventerprisesoftware/scrapi-mcp)
+
+MCP server for using [ScrAPI](https://scrapi.tech) to scrape web pages.
 
 ScrAPI is your ultimate web scraping solution, offering powerful, reliable, and easy-to-use features to extract data from any website effortlessly.
 
@@ -28,6 +33,14 @@ ScrAPI is your ultimate web scraping solution, offering powerful, reliable, and 
 Optionally get an API key from the [ScrAPI website](https://scrapi.tech).
 
 Without an API key you will be limited to one concurrent call and twenty free calls per day with minimal queuing capabilities.
+
+### Cloud Server
+
+The ScrAPI MCP Server is also available in the cloud over SSE at https://api.scrapi.dev/sse
+
+Cloud MCP servers are not widely supported yet but you can access this directly from your own custom clients or use [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to test it. There is currently no facility to pass through your API key when connecting to the cloud MCP server.
+
+![MCP-Inspector](https://raw.githubusercontent.com/DevEnterpriseSoftware/scrapi-mcp/master/img/mcp-inspector.jpg)
 
 ### Usage with Claude Desktop
 
@@ -74,6 +87,8 @@ Add the following to your `claude_desktop_config.json`:
   }
 }
 ```
+
+![Claude-Desktop](https://raw.githubusercontent.com/DevEnterpriseSoftware/scrapi-mcp/master/img/claude-desktop.jpg)
 
 ## Build
 
