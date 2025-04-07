@@ -1,13 +1,14 @@
 {
   "name": "@deventerprisesoftware/scrapi-mcp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MCP server for using ScrAPI to scrape web pages.",
   "keywords": [
     "mcp",
-    "scraper",
-    "scraping",
-    "extractor",
-    "crawler"
+    "web scraper",
+    "web scraping",
+    "web data extractor",
+    "claude",
+    "ai"
   ],
   "homepage": "https://scrapi.tech",
   "bugs": {
@@ -21,7 +22,7 @@
   "author": "DevEnterprise Software (https://deventerprise.com)",
   "type": "module",
   "bin": {
-    "mcp-server-scrapi": "dist/index.js"
+    "scrapi-mcp": "dist/index.js"
   },
   "files": [
     "dist"
