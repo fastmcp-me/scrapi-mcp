@@ -1,0 +1,43 @@
+{
+  "name": "@deventerprisesoftware/scrapi-mcp",
+  "version": "0.0.1",
+  "description": "MCP server for using ScrAPI to scrape web pages.",
+  "keywords": [
+    "mcp",
+    "scraper",
+    "scraping",
+    "extractor",
+    "crawler"
+  ],
+  "homepage": "https://scrapi.tech",
+  "bugs": {
+    "url": "https://github.com/DevEnterpriseSoftware/scrapi-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevEnterpriseSoftware/scrapi-mcp.git"
+  },
+  "license": "MIT",
+  "author": "DevEnterprise Software (https://deventerprise.com)",
+  "type": "module",
+  "bin": {
+    "mcp-server-scrapi": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "shx": "^0.4.0",
+    "typescript": "^5.8.3"
+  }
+}
