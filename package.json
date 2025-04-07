@@ -1,6 +1,6 @@
 {
   "name": "@deventerprisesoftware/scrapi-mcp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MCP server for using ScrAPI to scrape web pages.",
   "keywords": [
     "mcp",
@@ -21,9 +21,7 @@
   "license": "MIT",
   "author": "DevEnterprise Software (https://deventerprise.com)",
   "type": "module",
-  "bin": {
-    "scrapi-mcp": "dist/index.js"
-  },
+  "bin": "dist/index.js",
   "files": [
     "dist"
   ],
