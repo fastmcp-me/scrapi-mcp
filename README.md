@@ -37,7 +37,7 @@ Without an API key you will be limited to one concurrent call and twenty free ca
 
 ### Cloud Server
 
-The ScrAPI MCP Server is also available in the cloud over SSE at https://api.scrapi.dev/sse
+The ScrAPI MCP Server is also available in the cloud over SSE at https://api.scrapi.tech/mcp/sse and streamable HTTP at https://api.scrapi.tech/mcp
 
 Cloud MCP servers are not widely supported yet but you can access this directly from your own custom clients or use [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to test it. There is currently no facility to pass through your API key when connecting to the cloud MCP server.
 
@@ -52,7 +52,7 @@ Add the following to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "scrapi": {
+    "ScrAPI": {
       "command": "docker",
       "args": [
         "run",
@@ -70,12 +70,12 @@ Add the following to your `claude_desktop_config.json`:
 }
 ```
 
-### NPX
+#### NPX
 
 ```json
 {
   "mcpServers": {
-    "scrapi": {
+    "ScrAPI": {
       "command": "npx",
       "args": [
         "-y",
